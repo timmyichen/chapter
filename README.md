@@ -15,7 +15,7 @@ We use [Open API 3.0](https://www.openapis.org/about) to define the API structur
 ```bash
 npm run speccy
 ```
-Navigate to http://localhost:5000 to see API docs
+Navigate to http://localhost:8001 to see API docs
 
 ## Terminology
 To better communicate and more easily build an API and UI, we've decided on a collection of terminology to discuss about the Chapter project in a clear way:
@@ -53,10 +53,22 @@ npm install
 Start the server:
 
 ```
-docker-compose up
+npm run docker:start
 ```
 
-And that's it! Navigate to `localhost:8000` to view the app.
+And that's it! Navigate to `localhost:8000` to view the app. Speccy docs also available at `localhost:8001`
+
+
+## Testing 
+Run tests
+```
+npm run test
+```
+
+Run tests in watch mode
+```
+npm run test:watch
+```
 
 ## Schema
 
