@@ -3,11 +3,11 @@ networks:
   chapter:
 services:
   app:
-    image: node:10-alpine
+    build: .
     command: 'npm run dev'
     volumes:
       - .:/usr/chapter/
-    working_dir: /usr/chapter/
+      - /usr/chapter/node_modules
     ports:
       - '8000:8000'
   speccy:
