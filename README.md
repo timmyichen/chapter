@@ -84,11 +84,6 @@ Ensure that Docker Desktop is up and running, then run the following command:
 docker-compose up
 ```
 
-If you run it with `sudo` on linux, PWD environment variable won't be properly passed down to `docker-compose` so run
-```
-sudo PWD="$(pwd)" docker-compose up
-```
-
 Wait for the logs to show "server started on port 8000", then navigate to `localhost:8000` to view the app.
 
 The server will automatically restart anytime you save a `.ts` or `.js` file within the `server/` directory.
